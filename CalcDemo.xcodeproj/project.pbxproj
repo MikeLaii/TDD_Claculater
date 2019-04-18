@@ -18,7 +18,7 @@
 		803CF53622645E3D00D61E21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CF53522645E3D00D61E21 /* MainView.swift */; };
 		80E681E72265DE7D0023A095 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E681E62265DE7D0023A095 /* ViewModel.swift */; };
 		80E681E92265DFBA0023A095 /* CalculationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E681E82265DFBA0023A095 /* CalculationType.swift */; };
-		80E681EB2265E29F0023A095 /* CalculationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E681EA2265E29F0023A095 /* CalculationState.swift */; };
+		80E681EB2265E29F0023A095 /* CalculationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E681EA2265E29F0023A095 /* CalculationProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		803CF53522645E3D00D61E21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		80E681E62265DE7D0023A095 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		80E681E82265DFBA0023A095 /* CalculationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationType.swift; sourceTree = "<group>"; };
-		80E681EA2265E29F0023A095 /* CalculationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationState.swift; sourceTree = "<group>"; };
+		80E681EA2265E29F0023A095 /* CalculationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,7 @@
 			children = (
 				80E681E62265DE7D0023A095 /* ViewModel.swift */,
 				80E681E82265DFBA0023A095 /* CalculationType.swift */,
-				80E681EA2265E29F0023A095 /* CalculationState.swift */,
+				80E681EA2265E29F0023A095 /* CalculationProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 				800D78972264382A007DF10E /* ViewController.swift in Sources */,
 				803CF53622645E3D00D61E21 /* MainView.swift in Sources */,
 				800D78952264382A007DF10E /* AppDelegate.swift in Sources */,
-				80E681EB2265E29F0023A095 /* CalculationState.swift in Sources */,
+				80E681EB2265E29F0023A095 /* CalculationProtocol.swift in Sources */,
 				8029D20B22647A4400610791 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

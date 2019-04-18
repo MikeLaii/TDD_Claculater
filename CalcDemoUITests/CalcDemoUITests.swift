@@ -10,6 +10,8 @@ import XCTest
 
 class CalcDemoUITests: XCTestCase {
 
+    var app : XCUIApplication = XCUIApplication()
+
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
@@ -27,8 +29,41 @@ class CalcDemoUITests: XCTestCase {
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.buttons["NumberOne"].tap()
+        app.buttons["NumberTwo"].tap()
+        app.buttons["NumberThree"].tap()
+        app.buttons["Dot"].tap()
+        app.buttons["NumberZero"].tap()
+        
+        app.buttons["Addition"].tap()
+        
+        app.buttons["NumberFour"].tap()
+        app.buttons["NumberFive"].tap()
+        app.buttons["NumberSix"].tap()
+        app.buttons["Sign"].tap()
+        
+        app.buttons["Subtraction"].tap()
+        
+        app.buttons["NumberSeven"].tap()
+        app.buttons["NumberEight"].tap()
+        app.buttons["NumberNine"].tap()
+        
+        app.buttons["Equal"].tap()
+        app.buttons["Clean"].tap()
+        
+        app.buttons["NumberNine"].tap()
+        app.buttons["Multiplication"].tap()
+        app.buttons["NumberNine"].tap()
+        
+        app.buttons["Division"].tap()
+        app.buttons["NumberThree"].tap()
+        app.buttons["Equal"].tap()
+        
+        app.buttons["Percentage"].tap()
+
+        app.buttons["Clean"].tap()
+
+
     }
 
 }

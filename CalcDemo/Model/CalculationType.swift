@@ -8,13 +8,13 @@
 
 import UIKit
 
-enum CalculationType {
-    case command
-    case function
-    case number
-    case result
+enum Operators : String{
+    case addition = "add"
+    case subtraction = "sub"
+    case multiplication = "mul"
+    case division = "div"
+    case none
 }
-
 enum ButtonType: String {
     case zero = "0"
     case one = "1"
@@ -27,37 +27,16 @@ enum ButtonType: String {
     case eight = "8"
     case nine = "9"
     case dot 
-    case addition
-    case subtraction
-    case division
-    case multiplication
+    case addition = "add"
+    case subtraction = "sub"
+    case division = "div"
+    case multiplication = "mul"
     case equal
     case sign
     case clean
     case percentage
-}
 
-extension ButtonType {
-    
-    var calculationType : CalculationType {
-        switch self {
-        case .addition ,
-             .division ,
-             .multiplication ,
-             .subtraction :
-            return .command
-        case .clean ,
-             .percentage ,
-             .sign :
-            return .function
-        case .equal :
-            return .result
-        default:
-            return .number
-        }
-    }
-      
-    var state:CalculationState {
+    var state:CalculationProtocol {
         switch self {
         case .zero : return CalculationZero()
         case .one : return CalculationOne()
@@ -81,3 +60,4 @@ extension ButtonType {
         }
     }
 }
+

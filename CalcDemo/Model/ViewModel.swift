@@ -10,21 +10,12 @@ import UIKit
 
 class ViewModel {
     
-    struct ViewModelOutput {
-        var handler : ((String)->Void)?
-    }
-    
-    var outPut : ViewModelOutput
-    var context : CalculationContext = CalculationContext()
-    
-    init() {
-        self.outPut = ViewModelOutput()
-    }
+    var outPut : ((String)->Void)!
+    var connector : CalculationConnector = CalculationConnector()
     
     func run(_ type : ButtonType ){
-        context.push(type.state)
-        outPut.handler?(context.display)
+        connector.push(type.state)
+        outPut(connector.display)
     }
-     
 }
- 
+  

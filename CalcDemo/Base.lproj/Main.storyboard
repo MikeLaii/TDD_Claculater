@@ -38,6 +38,7 @@
                                                     <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrO-Of-oRH">
                                                         <rect key="frame" x="0.0" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" red="0.82794936429999999" green="0.82794936429999999" blue="0.82794936429999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Clean"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="WrO-Of-oRH" secondAttribute="height" multiplier="1:1" id="noh-Dh-4MG"/>
                                                         </constraints>
@@ -52,6 +53,7 @@
                                                     <button opaque="NO" tag="112" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0P-TU-V73">
                                                         <rect key="frame" x="101" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" red="0.82794936429999999" green="0.82794936429999999" blue="0.82794936429999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Sign"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="r0P-TU-V73" secondAttribute="height" multiplier="1:1" id="ys9-Oc-YBe"/>
                                                         </constraints>
@@ -66,6 +68,7 @@
                                                     <button opaque="NO" tag="113" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA7-uv-W8m">
                                                         <rect key="frame" x="202" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" red="0.82794936429999999" green="0.82794936429999999" blue="0.82794936429999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Percentage"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="NA7-uv-W8m" secondAttribute="height" multiplier="1:1" id="sMJ-pm-QF7"/>
                                                         </constraints>
@@ -80,6 +83,7 @@
                                                     <button opaque="NO" tag="114" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1N-Y0-teI">
                                                         <rect key="frame" x="303" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" red="0.93856143951416016" green="0.60824352502822876" blue="0.21554484963417053" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Division"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="M1N-Y0-teI" secondAttribute="height" multiplier="1:1" id="Mdg-6j-75S"/>
                                                         </constraints>
@@ -104,6 +108,7 @@
                                                     <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaQ-JY-QTP">
                                                         <rect key="frame" x="0.0" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="NumberSeven"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="QaQ-JY-QTP" secondAttribute="height" multiplier="1:1" id="Bch-5c-gI7"/>
                                                         </constraints>
@@ -118,6 +123,7 @@
                                                     <button opaque="NO" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyR-Fk-G3D">
                                                         <rect key="frame" x="101" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="NumberEight"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="zyR-Fk-G3D" secondAttribute="height" multiplier="1:1" id="CY7-Ek-TpM"/>
                                                         </constraints>
@@ -132,6 +138,7 @@
                                                     <button opaque="NO" tag="109" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyg-8o-8Om">
                                                         <rect key="frame" x="202" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="NumberNine"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Gyg-8o-8Om" secondAttribute="height" multiplier="1:1" id="gPF-sO-Eds"/>
                                                         </constraints>
@@ -146,6 +153,7 @@
                                                     <button opaque="NO" tag="115" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3p-fp-yrZ">
                                                         <rect key="frame" x="303" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" red="0.93856143951416016" green="0.60824352502822876" blue="0.21554484963417053" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Multiplication"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="f3p-fp-yrZ" secondAttribute="height" multiplier="1:1" id="7I9-Me-H6I"/>
                                                         </constraints>
@@ -170,6 +178,7 @@
                                                     <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKn-Ud-ujL">
                                                         <rect key="frame" x="0.0" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="NumberFour"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="cKn-Ud-ujL" secondAttribute="height" multiplier="1:1" id="V8l-ok-qok"/>
                                                         </constraints>
@@ -184,6 +193,7 @@
                                                     <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4I-G0-7Az">
                                                         <rect key="frame" x="101" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="NumberFive"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="v4I-G0-7Az" secondAttribute="height" multiplier="1:1" id="EaS-L0-QJM"/>
                                                         </constraints>
@@ -198,6 +208,7 @@
                                                     <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzv-1T-7mt">
                                                         <rect key="frame" x="202" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="NumberSix"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Fzv-1T-7mt" secondAttribute="height" multiplier="1:1" id="yAX-Im-mGr"/>
                                                         </constraints>
@@ -212,6 +223,7 @@
                                                     <button opaque="NO" tag="116" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhL-sj-dqC">
                                                         <rect key="frame" x="303" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" red="0.93856143951416016" green="0.60824352502822876" blue="0.21554484963417053" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Subtraction"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="uhL-sj-dqC" secondAttribute="height" multiplier="1:1" id="x90-Lv-ufv"/>
                                                         </constraints>
@@ -236,6 +248,7 @@
                                                     <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9K-gz-f4S">
                                                         <rect key="frame" x="0.0" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="NumberOne"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="M9K-gz-f4S" secondAttribute="height" multiplier="1:1" id="Vzk-jc-osh"/>
                                                         </constraints>
@@ -250,6 +263,7 @@
                                                     <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztN-z6-b8Y">
                                                         <rect key="frame" x="101" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="NumberTwo"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ztN-z6-b8Y" secondAttribute="height" multiplier="1:1" id="6fL-gV-fBo"/>
                                                         </constraints>
@@ -264,6 +278,7 @@
                                                     <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DJ-mk-vQN">
                                                         <rect key="frame" x="202" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="NumberThree"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="4DJ-mk-vQN" secondAttribute="height" multiplier="1:1" id="Tfv-09-XOR"/>
                                                         </constraints>
@@ -278,6 +293,7 @@
                                                     <button opaque="NO" tag="117" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTj-5e-nN4">
                                                         <rect key="frame" x="303" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" red="0.93856143951416016" green="0.60824352502822876" blue="0.21554484963417053" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Addition"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="YTj-5e-nN4" secondAttribute="height" multiplier="1:1" id="Rtp-mg-C9D"/>
                                                         </constraints>
@@ -302,6 +318,7 @@
                                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hg3-SR-ON2">
                                                         <rect key="frame" x="0.0" y="0.0" width="192" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="NumberZero"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Hg3-SR-ON2" secondAttribute="height" multiplier="192:91" id="1T9-mP-iFs"/>
                                                         </constraints>
@@ -316,6 +333,7 @@
                                                     <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXb-Ak-14N">
                                                         <rect key="frame" x="202" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Dot"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="YXb-Ak-14N" secondAttribute="height" multiplier="1:1" id="Sfi-C5-YDS"/>
                                                         </constraints>
@@ -330,6 +348,7 @@
                                                     <button opaque="NO" tag="118" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGL-Jr-FLv">
                                                         <rect key="frame" x="303" y="0.0" width="91" height="91"/>
                                                         <color key="backgroundColor" red="0.93856143951416016" green="0.60824352502822876" blue="0.21554484963417053" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Equal"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="qGL-Jr-FLv" secondAttribute="height" multiplier="1:1" id="EgF-fq-Hji"/>
                                                         </constraints>

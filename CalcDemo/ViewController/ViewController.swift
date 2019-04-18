@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var mainView: MainView!
-    var model : ViewModel = ViewModel()
+    var viewModel : ViewModel = ViewModel()
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -20,64 +20,64 @@ class ViewController: UIViewController {
         setupUI()
         initialText()
     }
- 
+  
     //MARK: - Buttom Action
     @IBAction func cleanBtnAction(_ sender: Any) {
-        model.run(.clean)
+        viewModel.run(.clean)
     }
     @IBAction func signBtnAction(_ sender: Any) {
-        model.run(.sign)
+        viewModel.run(.sign)
     }
     @IBAction func percentageBtnAction(_ sender: Any) {
-        model.run(.percentage)
+        viewModel.run(.percentage)
     }
     @IBAction func divisionBtnAction(_ sender: Any) {
-        model.run(.division)
+        viewModel.run(.division)
     }
     @IBAction func multBtnAction(_ sender: Any) {
-        model.run(.multiplication)
+        viewModel.run(.multiplication)
     }
     @IBAction func subtractionBtnAction(_ sender: Any) {
-        model.run(.subtraction)
+        viewModel.run(.subtraction)
     }
     @IBAction func additionBtnAction(_ sender: Any) {
-        model.run(.addition)
+        viewModel.run(.addition)
     }
     @IBAction func resultBtnAction(_ sender: Any) {
-        model.run(.equal)
+        viewModel.run(.equal)
     }
     @IBAction func dotBtnAction(_ sender: Any) {
-        model.run(.dot)
+        viewModel.run(.dot)
     }
     @IBAction func zeroBtnAction(_ sender: Any) {
-        model.run(.zero)
+        viewModel.run(.zero)
     }
     @IBAction func oneBtnAction(_ sender: Any) {
-        model.run(.one)
+        viewModel.run(.one)
     }
     @IBAction func twoBtnAction(_ sender: Any) {
-        model.run(.two)
+        viewModel.run(.two)
     }
     @IBAction func threeBtnAction(_ sender: Any) {
-        model.run(.three)
+        viewModel.run(.three)
     }
     @IBAction func fourBtnAction(_ sender: Any) {
-        model.run(.four)
+        viewModel.run(.four)
     }
     @IBAction func fiveBtnAction(_ sender: Any) {
-        model.run(.five)
+        viewModel.run(.five)
     }
     @IBAction func sixBtnAction(_ sender: Any) {
-        model.run(.six)
+        viewModel.run(.six)
     }
     @IBAction func sevenBtnAction(_ sender: Any) {
-        model.run(.seven)
+        viewModel.run(.seven)
     }
     @IBAction func eightBtnAction(_ sender: Any) {
-        model.run(.eight)
+        viewModel.run(.eight)
     }
     @IBAction func nineBtnAction(_ sender: Any) {
-        model.run(.nine)
+        viewModel.run(.nine)
     }
 }
 
@@ -95,18 +95,16 @@ extension ViewController {
         setupButtonUI(stackView: mainView.horizontalFive)
     }
     func setupButtonUI(stackView:UIStackView){
-        for i in 0..<stackView.subviews.count{
-            guard let buttom = stackView.subviews[i] as? UIButton else {return}
-            let size = min(buttom.frame.size.height, buttom.frame.size.width)
-            buttom.layer.cornerRadius = size / 2
-            buttom.clipsToBounds = true
+        for case let button in stackView.subviews{
+            let size = min(button.frame.size.height, button.frame.size.width)
+            button.layer.cornerRadius = size / 2
+            button.clipsToBounds = true
         }
     }
     func initialText(){
-        model.outPut.handler = { [weak self] value in
+        viewModel.outPut = { [weak self] value in
             self?.mainView.resultLabel.text = value
         }
-        model.run(.clean)
+        viewModel.run(.clean)
     }
-    
 }

@@ -19,7 +19,5 @@ extension String{
     var toDouble:Double{
         return Double.init(self) ?? 0.0
     }
-    
 }
 
- 
