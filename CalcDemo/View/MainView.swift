@@ -9,7 +9,6 @@
 import UIKit
 
 class MainView: UIView {
-
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var verticalStackView: UIStackView!
     @IBOutlet weak var horizontalOne: UIStackView!

@@ -9,90 +9,84 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet var mainView: MainView!
-    var viewModel : ViewModel = ViewModel()
-    
+    var viewModel : ViewModel!
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.layoutIfNeeded()
-        setupUI()
-        initialText()
+        self.setupUI()
+        self.initialText()
     }
-  
     //MARK: - Buttom Action
     @IBAction func cleanBtnAction(_ sender: Any) {
-        viewModel.run(.clean)
+        self.viewModel.run(.clear)
     }
     @IBAction func signBtnAction(_ sender: Any) {
-        viewModel.run(.sign)
+        self.viewModel.run(.sign)
     }
     @IBAction func percentageBtnAction(_ sender: Any) {
-        viewModel.run(.percentage)
+        self.viewModel.run(.perc)
     }
     @IBAction func divisionBtnAction(_ sender: Any) {
-        viewModel.run(.division)
+        self.viewModel.run(.div)
     }
     @IBAction func multBtnAction(_ sender: Any) {
-        viewModel.run(.multiplication)
+        self.viewModel.run(.mul)
     }
     @IBAction func subtractionBtnAction(_ sender: Any) {
-        viewModel.run(.subtraction)
+        self.viewModel.run(.sub)
     }
     @IBAction func additionBtnAction(_ sender: Any) {
-        viewModel.run(.addition)
+        self.viewModel.run(.add)
     }
     @IBAction func resultBtnAction(_ sender: Any) {
-        viewModel.run(.equal)
+        self.viewModel.run(.equal)
     }
     @IBAction func dotBtnAction(_ sender: Any) {
-        viewModel.run(.dot)
+        self.viewModel.run(.dot)
     }
     @IBAction func zeroBtnAction(_ sender: Any) {
-        viewModel.run(.zero)
+        self.viewModel.run(.zero)
     }
     @IBAction func oneBtnAction(_ sender: Any) {
-        viewModel.run(.one)
+        self.viewModel.run(.one)
     }
     @IBAction func twoBtnAction(_ sender: Any) {
-        viewModel.run(.two)
+        self.viewModel.run(.two)
     }
     @IBAction func threeBtnAction(_ sender: Any) {
-        viewModel.run(.three)
+        self.viewModel.run(.three)
     }
     @IBAction func fourBtnAction(_ sender: Any) {
-        viewModel.run(.four)
+        self.viewModel.run(.four)
     }
     @IBAction func fiveBtnAction(_ sender: Any) {
-        viewModel.run(.five)
+        self.viewModel.run(.five)
     }
     @IBAction func sixBtnAction(_ sender: Any) {
-        viewModel.run(.six)
+        self.viewModel.run(.six)
     }
     @IBAction func sevenBtnAction(_ sender: Any) {
-        viewModel.run(.seven)
+        self.viewModel.run(.seven)
     }
     @IBAction func eightBtnAction(_ sender: Any) {
-        viewModel.run(.eight)
+        self.viewModel.run(.eight)
     }
     @IBAction func nineBtnAction(_ sender: Any) {
-        viewModel.run(.nine)
+        self.viewModel.run(.nine)
     }
 }
-
 extension ViewController {
-    
     //MARK: - Setup
     func setupUI(){
-        mainView.resultLabel.text = .defaultString
-        mainView.resultLabel.adjustsFontSizeToFitWidth = true
-        mainView.resultLabel.minimumScaleFactor = 0.5
-        setupButtonUI(stackView: mainView.horizontalOne)
-        setupButtonUI(stackView: mainView.horizontalTwo)
-        setupButtonUI(stackView: mainView.horizontalThree)
-        setupButtonUI(stackView: mainView.horizontalFour)
-        setupButtonUI(stackView: mainView.horizontalFive)
+        self.mainView.resultLabel.text = .defaultString
+        self.mainView.resultLabel.adjustsFontSizeToFitWidth = true
+        self.mainView.resultLabel.minimumScaleFactor = 0.5
+        self.setupButtonUI(stackView: mainView.horizontalOne)
+        self.setupButtonUI(stackView: mainView.horizontalTwo)
+        self.setupButtonUI(stackView: mainView.horizontalThree)
+        self.setupButtonUI(stackView: mainView.horizontalFour)
+        self.setupButtonUI(stackView: mainView.horizontalFive)
     }
     func setupButtonUI(stackView:UIStackView){
         for case let button in stackView.subviews{
@@ -100,11 +94,13 @@ extension ViewController {
             button.layer.cornerRadius = size / 2
             button.clipsToBounds = true
         }
+        self.view.layoutIfNeeded()
     }
     func initialText(){
-        viewModel.outPut = { [weak self] value in
+        self.viewModel = ViewModel.init()
+        self.viewModel.output = { [weak self] (value) in
             self?.mainView.resultLabel.text = value
         }
-        viewModel.run(.clean)
+        self.viewModel.run(.clear)
     }
 }
